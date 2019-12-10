@@ -36,6 +36,9 @@
             System.Windows.Forms.Label отчествоLabel;
             System.Windows.Forms.Label дата_рожденияLabel;
             System.Windows.Forms.Label адресLabel;
+            System.Windows.Forms.Label idLabel1;
+            System.Windows.Forms.Label фамилияLabel1;
+            System.Windows.Forms.Label имяLabel1;
             this.database1DataSet1 = new Pro.Database1DataSet();
             this.tableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableTableAdapter1 = new Pro.Database1DataSetTableAdapters.TableTableAdapter();
@@ -59,16 +62,28 @@
             this.отчествоTextBox1 = new System.Windows.Forms.TextBox();
             this.дата_рожденияDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.адресTextBox1 = new System.Windows.Forms.TextBox();
+            this.database1DataSet11 = new Pro.Database1DataSet1();
+            this.tableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tableTableAdapter2 = new Pro.Database1DataSet1TableAdapters.TableTableAdapter();
+            this.tableAdapterManager2 = new Pro.Database1DataSet1TableAdapters.TableAdapterManager();
+            this.idTextBox2 = new System.Windows.Forms.TextBox();
+            this.фамилияTextBox2 = new System.Windows.Forms.TextBox();
+            this.имяTextBox2 = new System.Windows.Forms.TextBox();
             idLabel = new System.Windows.Forms.Label();
             фамилияLabel = new System.Windows.Forms.Label();
             имяLabel = new System.Windows.Forms.Label();
             отчествоLabel = new System.Windows.Forms.Label();
             дата_рожденияLabel = new System.Windows.Forms.Label();
             адресLabel = new System.Windows.Forms.Label();
+            idLabel1 = new System.Windows.Forms.Label();
+            фамилияLabel1 = new System.Windows.Forms.Label();
+            имяLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1BindingNavigator)).BeginInit();
             this.tableBindingSource1BindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet1
@@ -218,7 +233,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(301, 110);
+            idLabel.Location = new System.Drawing.Point(34, 151);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(20, 13);
             idLabel.TabIndex = 1;
@@ -227,7 +242,7 @@
             // idTextBox1
             // 
             this.idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource1, "Id", true));
-            this.idTextBox1.Location = new System.Drawing.Point(400, 107);
+            this.idTextBox1.Location = new System.Drawing.Point(133, 151);
             this.idTextBox1.Name = "idTextBox1";
             this.idTextBox1.Size = new System.Drawing.Size(200, 22);
             this.idTextBox1.TabIndex = 2;
@@ -235,7 +250,7 @@
             // фамилияLabel
             // 
             фамилияLabel.AutoSize = true;
-            фамилияLabel.Location = new System.Drawing.Point(301, 138);
+            фамилияLabel.Location = new System.Drawing.Point(34, 182);
             фамилияLabel.Name = "фамилияLabel";
             фамилияLabel.Size = new System.Drawing.Size(59, 13);
             фамилияLabel.TabIndex = 3;
@@ -244,7 +259,7 @@
             // фамилияTextBox1
             // 
             this.фамилияTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource1, "Фамилия", true));
-            this.фамилияTextBox1.Location = new System.Drawing.Point(400, 135);
+            this.фамилияTextBox1.Location = new System.Drawing.Point(133, 179);
             this.фамилияTextBox1.Name = "фамилияTextBox1";
             this.фамилияTextBox1.Size = new System.Drawing.Size(200, 22);
             this.фамилияTextBox1.TabIndex = 4;
@@ -252,7 +267,7 @@
             // имяLabel
             // 
             имяLabel.AutoSize = true;
-            имяLabel.Location = new System.Drawing.Point(301, 166);
+            имяLabel.Location = new System.Drawing.Point(34, 210);
             имяLabel.Name = "имяLabel";
             имяLabel.Size = new System.Drawing.Size(32, 13);
             имяLabel.TabIndex = 5;
@@ -261,7 +276,7 @@
             // имяTextBox1
             // 
             this.имяTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource1, "Имя", true));
-            this.имяTextBox1.Location = new System.Drawing.Point(400, 163);
+            this.имяTextBox1.Location = new System.Drawing.Point(133, 207);
             this.имяTextBox1.Name = "имяTextBox1";
             this.имяTextBox1.Size = new System.Drawing.Size(200, 22);
             this.имяTextBox1.TabIndex = 6;
@@ -269,7 +284,7 @@
             // отчествоLabel
             // 
             отчествоLabel.AutoSize = true;
-            отчествоLabel.Location = new System.Drawing.Point(301, 194);
+            отчествоLabel.Location = new System.Drawing.Point(34, 238);
             отчествоLabel.Name = "отчествоLabel";
             отчествоLabel.Size = new System.Drawing.Size(58, 13);
             отчествоLabel.TabIndex = 7;
@@ -278,7 +293,7 @@
             // отчествоTextBox1
             // 
             this.отчествоTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource1, "Отчество", true));
-            this.отчествоTextBox1.Location = new System.Drawing.Point(400, 191);
+            this.отчествоTextBox1.Location = new System.Drawing.Point(133, 235);
             this.отчествоTextBox1.Name = "отчествоTextBox1";
             this.отчествоTextBox1.Size = new System.Drawing.Size(200, 22);
             this.отчествоTextBox1.TabIndex = 8;
@@ -286,7 +301,7 @@
             // дата_рожденияLabel
             // 
             дата_рожденияLabel.AutoSize = true;
-            дата_рожденияLabel.Location = new System.Drawing.Point(301, 223);
+            дата_рожденияLabel.Location = new System.Drawing.Point(34, 267);
             дата_рожденияLabel.Name = "дата_рожденияLabel";
             дата_рожденияLabel.Size = new System.Drawing.Size(93, 13);
             дата_рожденияLabel.TabIndex = 9;
@@ -295,7 +310,7 @@
             // дата_рожденияDateTimePicker1
             // 
             this.дата_рожденияDateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tableBindingSource1, "Дата рождения", true));
-            this.дата_рожденияDateTimePicker1.Location = new System.Drawing.Point(400, 219);
+            this.дата_рожденияDateTimePicker1.Location = new System.Drawing.Point(133, 263);
             this.дата_рожденияDateTimePicker1.Name = "дата_рожденияDateTimePicker1";
             this.дата_рожденияDateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.дата_рожденияDateTimePicker1.TabIndex = 10;
@@ -303,7 +318,7 @@
             // адресLabel
             // 
             адресLabel.AutoSize = true;
-            адресLabel.Location = new System.Drawing.Point(301, 250);
+            адресLabel.Location = new System.Drawing.Point(34, 294);
             адресLabel.Name = "адресLabel";
             адресLabel.Size = new System.Drawing.Size(41, 13);
             адресLabel.TabIndex = 11;
@@ -312,14 +327,91 @@
             // адресTextBox1
             // 
             this.адресTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource1, "Адрес", true));
-            this.адресTextBox1.Location = new System.Drawing.Point(400, 247);
+            this.адресTextBox1.Location = new System.Drawing.Point(133, 291);
             this.адресTextBox1.Name = "адресTextBox1";
             this.адресTextBox1.Size = new System.Drawing.Size(200, 22);
             this.адресTextBox1.TabIndex = 12;
             // 
+            // database1DataSet11
+            // 
+            this.database1DataSet11.DataSetName = "Database1DataSet1";
+            this.database1DataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableBindingSource2
+            // 
+            this.tableBindingSource2.DataMember = "Table";
+            this.tableBindingSource2.DataSource = this.database1DataSet11;
+            // 
+            // tableTableAdapter2
+            // 
+            this.tableTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.TableTableAdapter = this.tableTableAdapter2;
+            this.tableAdapterManager2.UpdateOrder = Pro.Database1DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // idLabel1
+            // 
+            idLabel1.AutoSize = true;
+            idLabel1.Location = new System.Drawing.Point(374, 50);
+            idLabel1.Name = "idLabel1";
+            idLabel1.Size = new System.Drawing.Size(20, 13);
+            idLabel1.TabIndex = 13;
+            idLabel1.Text = "Id:";
+            // 
+            // idTextBox2
+            // 
+            this.idTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource2, "Id", true));
+            this.idTextBox2.Location = new System.Drawing.Point(439, 47);
+            this.idTextBox2.Name = "idTextBox2";
+            this.idTextBox2.Size = new System.Drawing.Size(100, 22);
+            this.idTextBox2.TabIndex = 14;
+            // 
+            // фамилияLabel1
+            // 
+            фамилияLabel1.AutoSize = true;
+            фамилияLabel1.Location = new System.Drawing.Point(374, 78);
+            фамилияLabel1.Name = "фамилияLabel1";
+            фамилияLabel1.Size = new System.Drawing.Size(59, 13);
+            фамилияLabel1.TabIndex = 15;
+            фамилияLabel1.Text = "Фамилия:";
+            // 
+            // фамилияTextBox2
+            // 
+            this.фамилияTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource2, "Фамилия", true));
+            this.фамилияTextBox2.Location = new System.Drawing.Point(439, 75);
+            this.фамилияTextBox2.Name = "фамилияTextBox2";
+            this.фамилияTextBox2.Size = new System.Drawing.Size(100, 22);
+            this.фамилияTextBox2.TabIndex = 16;
+            // 
+            // имяLabel1
+            // 
+            имяLabel1.AutoSize = true;
+            имяLabel1.Location = new System.Drawing.Point(374, 106);
+            имяLabel1.Name = "имяLabel1";
+            имяLabel1.Size = new System.Drawing.Size(32, 13);
+            имяLabel1.TabIndex = 17;
+            имяLabel1.Text = "Имя:";
+            // 
+            // имяTextBox2
+            // 
+            this.имяTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource2, "Имя", true));
+            this.имяTextBox2.Location = new System.Drawing.Point(439, 103);
+            this.имяTextBox2.Name = "имяTextBox2";
+            this.имяTextBox2.Size = new System.Drawing.Size(100, 22);
+            this.имяTextBox2.TabIndex = 18;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(620, 337);
+            this.Controls.Add(idLabel1);
+            this.Controls.Add(this.idTextBox2);
+            this.Controls.Add(фамилияLabel1);
+            this.Controls.Add(this.фамилияTextBox2);
+            this.Controls.Add(имяLabel1);
+            this.Controls.Add(this.имяTextBox2);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox1);
             this.Controls.Add(фамилияLabel);
@@ -340,6 +432,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1BindingNavigator)).EndInit();
             this.tableBindingSource1BindingNavigator.ResumeLayout(false);
             this.tableBindingSource1BindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,6 +488,13 @@
         private System.Windows.Forms.TextBox отчествоTextBox1;
         private System.Windows.Forms.DateTimePicker дата_рожденияDateTimePicker1;
         private System.Windows.Forms.TextBox адресTextBox1;
+        private Database1DataSet1 database1DataSet11;
+        private System.Windows.Forms.BindingSource tableBindingSource2;
+        private Database1DataSet1TableAdapters.TableTableAdapter tableTableAdapter2;
+        private Database1DataSet1TableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.TextBox idTextBox2;
+        private System.Windows.Forms.TextBox фамилияTextBox2;
+        private System.Windows.Forms.TextBox имяTextBox2;
     }
 }
 

@@ -42,6 +42,8 @@ namespace Pro
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet11.Table". При необходимости она может быть перемещена или удалена.
+            this.tableTableAdapter2.Fill(this.database1DataSet11.Table);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet1.Table". При необходимости она может быть перемещена или удалена.
             this.tableTableAdapter1.Fill(this.database1DataSet1.Table);
 
