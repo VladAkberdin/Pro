@@ -314,6 +314,7 @@
             this.дата_рожденияDateTimePicker1.Name = "дата_рожденияDateTimePicker1";
             this.дата_рожденияDateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.дата_рожденияDateTimePicker1.TabIndex = 10;
+            this.дата_рожденияDateTimePicker1.Value = new System.DateTime(2019, 12, 5, 0, 0, 0, 0);
             // 
             // адресLabel
             // 
